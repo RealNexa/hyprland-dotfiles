@@ -1,4 +1,3 @@
-
 RCS
 .+,v
 
@@ -20,3 +19,4 @@ _darcs
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
+nice-packages.txt
