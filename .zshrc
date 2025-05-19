@@ -26,6 +26,7 @@ compinit
 # Plugins
 source $ZSH_PLUGINS/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $ZSH_PLUGINS/git-prompt-zsh/git-prompt.zsh
+fpath=($ZSH_PLUGINS/zsh-completions/src $fpath)
 
 # Prompt
 # PS1="[%B%n@%F{#2f8cc6}%m%f%b %1~ ]%(!.#.$) "
