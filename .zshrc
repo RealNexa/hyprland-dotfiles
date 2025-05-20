@@ -8,7 +8,7 @@ bindkey -v
 
 
 # History file
-HISTFILE=.histfile
+HISTFILE=$HOME/.histfile
 HISTSIZE=2000
 SAVEHIST=2000
 setopt HIST_IGNORE_ALL_DUPS

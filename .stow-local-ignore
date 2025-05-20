@@ -19,5 +19,6 @@ _darcs
 ^/README.*
 ^/LICENSE.*
 ^/COPYING
+.histfile
 nice-packages.txt
 install.sh
