@@ -1,0 +1,114 @@
+@define-color background #1E1E2E;
+@define-color accent #5ea5e0;
+@define-color primary #9399B2;
+@define-color text-color #fcfcfc;
+@define-color text-color-dark #000000;
+
+* {
+    font-family: "Ubuntu Nerd Font";
+    font-size: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: @text-color;
+}
+
+window#waybar > box {
+    padding: 0 1rem;
+}
+
+
+window#waybar{
+    background-color: @background;
+    padding-left: 10px;
+}
+
+#custom-archlogo {
+    color: @background;
+    background-color: @accent;
+    padding: 0 0.5rem 0 0.75rem;
+    margin: 0.25rem 0;
+}
+
+#custom-left1,
+#custom-left2,
+#custom-left3,
+#custom-right1,
+#custom-right2,
+#custom-right3
+{
+    font-family: "BitstromWera Nerd Font";
+    font-size: 20px; 
+    margin: 0.25rem 0;
+    padding: 0;
+}
+
+#custom-left1,
+#custom-right1 {
+    color: @accent;
+}
+
+
+#custom-left2,
+#custom-left3,
+#custom-right2,
+#custom-right3
+{
+    color: @primary;
+}
+
+#clock.time {
+    background-color: @primary;
+    padding: 0 0.75rem;
+    margin: 0.25rem 0;
+}
+
+#clock.date {
+    background-color: @primary;
+    padding: 0 0.75rem;
+    margin: 0.25rem 0;
+}
+
+#cpu {
+    background-color: @primary;
+    padding: 0 0.75rem;
+    margin: 3px 0;
+}
+
+
+#memory {
+    background-color: @primary;
+    padding: 0 0.75rem;
+    margin: 3px 0;
+}
+
+#workspaces {
+    background-color: @background;
+}
+
+#workspaces button {
+    margin: 0.2rem 0;
+    padding: 0 0.75rem;
+}
+
+#workspaces button:hover {
+    color: @primary;
+}
+
+#workspaces button.active {
+    background-color: @primary;
+    border-radius: 20px;
+}
+
+#window {
+    padding-left: 1rem;
+}
+
+#network {
+    margin: 0.2rem 0;
+    padding: 0 0.75rem;
+}
+
+#control {
+    margin: 0.2rem 0;
+    padding: 0 0.75rem;
+}

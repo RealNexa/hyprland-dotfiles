@@ -1,0 +1,42 @@
+{
+
+    "height": 30,
+    "layer": "top",
+    "reload_style_on_change": true,
+    "include": ["/home/ulol21/.config/waybar/modules.jsonc"],
+
+    "modules-left": [
+        "hyprland/workspaces",
+        "hyprland/window"
+    ], 
+
+    "modules-center": [
+        "custom/left3",
+        "memory",
+        "custom/left2",
+        "custom/left3",
+        "cpu",
+        "custom/left2",
+        "custom/left1",
+        "custom/archlogo",
+        "custom/right1",
+        "custom/right2",
+        "clock#time",
+        "custom/right3",
+        "custom/right2",
+        "clock#date",
+        "custom/right3"
+    ],
+
+    "modules-right": ["network", "group/control", "battery"],
+
+
+    "group/control": {
+        "orientation": "horizontal",
+        "modules": [
+            "backlight",
+            "pulseaudio"
+        ]
+    }
+
+}
