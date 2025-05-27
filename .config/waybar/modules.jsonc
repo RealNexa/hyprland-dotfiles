@@ -53,6 +53,11 @@
         "format": " ",
         "tooltip": false
     },
+    "custom/logout": {
+        "format": "<b> </b>",
+        "tooltip": false,
+        "on-click": "wlogout"
+    },
 
 
     "custom/left1": {
