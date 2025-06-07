@@ -28,7 +28,7 @@
         "custom/right3"
     ],
 
-    "modules-right": ["network", "group/control", "battery", "custom/left3", "custom/logout", "custom/right3" ],
+    "modules-right": ["custom/left3", "custom/mullvad", "network", "custom/left2", "group/control", "battery", "custom/left3", "custom/logout"],
 
 
     "group/control": {

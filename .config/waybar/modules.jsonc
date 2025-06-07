@@ -39,7 +39,7 @@
     "network": {
         "interval": 5,
         "format-wifi": "  {ipaddr} | {essid}",
-        "format-ethernet": "󰈀  {ipaddr} | {ifname}",
+        "format-ethernet": "󰈀 {ipaddr} | {ifname}",
         "format-linked": "󰌙  (No IP) | {ifname}",
         "format-disconnected": "󰖪  Disconnected",
         "format-alt": "  {bandwidthDownBytes} |   {bandwidthUpBytes}",
@@ -58,7 +58,33 @@
         "tooltip": false,
         "on-click": "wlogout"
     },
+    "custom/mullvad": {
+        "interval": 5,
+        "text": "{text}",
+        "exec": "~/.config/waybar/scripts/mullvadvpn.sh status | jq --unbuffered --compact-output",
+        "exec-on-event": true,
+        "return-type": "json",
+        "on-click": "~/.config/waybar/scripts/mullvadvpn.sh toggle | jq --unbuffered --compact-output"
+    },
 
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-bluetooth": "{icon}  {volume}%",
+        "format-muted": " ",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "phone-muted": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"]
+    },
 
     "custom/left1": {
         "format": "",
